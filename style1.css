@@ -196,7 +196,7 @@ gap: 40px;
   /****************************robot************************/
 .robot {
   padding: 40px 0 40px 0;
-  background-image: url(../hous/img1/robot-bg.png);
+  background-image: url(./img1/robot-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,4 +327,5 @@ height: 350px;
 }
  
 }
+
 
