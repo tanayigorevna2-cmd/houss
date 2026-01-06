@@ -252,7 +252,7 @@ font-size: 15px;
   padding-top: clamp(80px, 8.85vw, 170px);
   padding-bottom: 50px;
  min-height: 100vh;
-  background-image: url(../hous/img/backgraund.png);
+  background-image: url(./img/backgraund.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -301,16 +301,16 @@ font-size: 15px;
 }
 
 .card-one::before {
-  background-image: url(../hous/icon/hero-a.png);
+  background-image: url(./icon/hero-a.png);
 }
 .card-two::before {
-  background-image: url(../hous/icon/hero-b.png);
+  background-image: url(./icon/hero-b.png);
 }
 .card-three::before {
-  background-image: url(../hous/icon/hero-c.png);
+  background-image: url(./icon/hero-c.png);
 }
 .card-four::before {
-  background-image: url(../hous/icon/hero-d.png);
+  background-image: url(./icon/hero-d.png);
 }
 
 .card-body {
@@ -820,3 +820,4 @@ border-radius: 8px;
   opacity:1;
   
 }
+
