@@ -1,0 +1,327 @@
+
+    .orange-link{
+      color:#ff7f50 ;
+    }
+     /***********hero*****************************/
+     .hero-one {
+      background-image: url(./img1/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  padding: clamp(60px, 10vw, 140px) 0;
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+
+}
+
+
+.hero-content {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.6); /* трохи прозорий фон для контрасту */
+  padding: clamp(20px, 5vw, 40px);
+  border-radius: 12px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 48px);
+  color: #095682;
+  margin-bottom: 15px;
+}
+
+.hero-text {
+  font-size: clamp(16px, 2vw, 20px);
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color:#9DCCE4;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: #07496d;
+}
+
+/* --- адаптація під телефони --- */
+@media (max-width: 576px) {
+   
+  .hero-content {
+    text-align: center;
+    padding: 25px 15px;
+  }
+
+  .btn-hero {
+    width: 100%;
+  }
+}
+/**********************************************************************/
+.container-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.box-link{
+display: flex;
+flex-direction: column;
+  border: none;
+  gap: 15px;
+}
+.links-container a{
+  font-size: 16px;
+  color: black;
+}
+.links-container a:hover{
+  color: #095682;
+  text-decoration: underline;
+
+
+}
+  .cards{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    max-width:800px;
+    border:1px solid #ddd;
+    padding:12px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.04);
+    background:#fff;
+  }
+
+  .cards-image{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:6px;
+    flex:0 0 150px;
+  }
+  .title-link{
+    font-weight: 700 ;
+    font-size: 20px;
+    color: #292d32;
+  }
+
+  .cards-content{
+    flex:1;
+    min-width:0; /* важливо для обрізання тексту в flex */
+  }
+
+  
+  .cards-text{
+    margin:0 0 15px 0;
+    line-height:1.4;
+    /* показуємо приблизно 3 рядки — підлаштуй max-height під свій шрифт */
+    max-height:4.2em;
+    overflow:hidden;
+    position:relative;
+    transition: max-height .35s ease;
+  }
+
+  /* додатковий градієнт праворуч в кінці абзацу (опційно) */
+  .cards-text::after{
+    content:"";
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:40%;
+    height:1.4em;
+    background:linear-gradient(to right, rgba(255,255,255,0), #fff);
+    pointer-events:none;
+  }
+
+  /* коли розгорнутий — скидаємо обмеження і прибираємо градієнт */
+  .cards.expanded .cards-text{
+    max-height:999px;
+  }
+  .cards.expanded .cards__text::after{
+    display:none;
+  }
+
+  .cards-btn{
+    background:#9DCCE4;
+    color:#fff;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:0.95rem;
+    transition: ease-in-out 1s;
+  }
+  .cards-btn:hover{
+    background:#095682;
+  }
+  .span-btn span{
+  font-size:  15px ;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #666666;
+  }
+
+  /* адаптація для мобілок — картка вертикально */
+  @media (max-width:520px){
+    .cards{
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+    .cards-image{
+      width:100%;
+      height:200px;
+      flex:0 0 auto;
+    }
+    .cards-content{ min-width:unset; }
+    .cards-text::after{ width:50%; right:25%; }
+    .links-container a{
+  font-size: 10px;
+    }
+    
+
+.box-link{
+gap: 40px;
+
+  }}
+  /****************************robot************************/
+.robot {
+  padding: 40px 0 40px 0;
+  background-image: url(../hous/img1/robot-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 470px;
+}
+
+.box-robot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  min-height: 370px;
+  max-width: 1300px;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 20px 40px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+}
+
+.img-robot {
+  width: 40%;
+  max-width: 400px;
+height: 350px;
+}
+
+.robot-content {
+  text-align: center;
+  flex: 1;
+}
+
+.info-title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.robot-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+ .work-btn {
+   
+    cursor: pointer;
+  
+    transition: background-color 0.3s;
+  }
+
+  .work-btn:hover {
+    background-color:#095682;
+  }
+
+  /* Форма, яка спочатку схована */
+  .helper-form {
+    display: none;
+    background: white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .helper-form h3 {
+    margin-bottom: 15px;
+  }
+
+  .helper-form input,
+  .helper-form textarea,
+  .helper-form button {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+
+  .helper-form button {
+    background-color:#095682;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .helper-form button:hover {
+    background-color: #9DCCE4;
+  }
+
+/* --- адаптивність --- */
+@media (max-width: 992px) {
+  .box-robot {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .img-robot {
+    width: 60%;
+    max-width: 250px;
+    height: 50%;
+  }
+
+  .info-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-robot {
+    width: 80%;
+  }
+
+  .info-title {
+    font-size: 1.2rem;
+  }
+
+  .robot-text {
+    font-size: 0.9rem;
+  }
+  .robot {
+ padding-top: 20px;
+  min-height: 500px;
+}
+ 
+}
