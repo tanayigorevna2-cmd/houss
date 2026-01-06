@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bau-dein-Haus</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- Твої стилі -->
+ <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style0.css">
+</head>
+
+
+  <body>
+  
+
+
+<div class="wrapper">
+<header class=" header">
+    <div class="container">
+  <div class="nav-top">
+    <!-- Логотип -->
+    <a href="#" class="d-flex align-items-center text-decoration-none">
+      <img class="logo" src="icon/logo.png" alt="Логотип" >
+    </a>
+
+    <!-- Кнопки -->
+    <div class="btn-box align-items-center gap-2 mt-2 mt-md-0">
+      <button class="btn btn-orange">Побудувати будинок</button>
+      <button class="btn btn-blue-border">Партнерська програма для майстрів</button>
+    </div>
+
+    <!-- Зірочка Вибране -->
+    <button class="btn-star" id="favoriteBtn" title="Додати у вибране">
+      <i class="bi bi-star"></i> Вибране
+    </button>
+
+    <!-- Бургер -->
+    <i class="bi bi-list burger"></i>
+  </div>
+  </div>
+  
+
+  <!-- Меню і пошук для десктопу -->
+  <nav class="nav-menu mt-3">
+     <div class="container d-flex align-items-center justify-content-between"> 
+    <ul class="menu">
+      <li class="menu-item"><a href="index.html#hero" class="item-link">Головна</a></li>
+          <li class="menu-item"><a href="index.html#works" class="item-link">Ремонт</a></li>
+          <li class="menu-item"><a href="index.html#info" class="item-link">Будівництво</a></li>
+          <li class="menu-item"><a href="index.html#article" class="item-link orange-link">Статті про ремонт</a></li>
+          <li class="menu-item"><a href="index.html#idea" class="item-link">Ідеї для дизайну</a></li>
+    </ul>
+    <div class="form-box">
+    <form class="search-form" role="search">
+      <input class="form-control " type="search" placeholder="Пошук по сайту" aria-label="Search">
+      <button class=" btn-search" type="submit">Знайти</button>
+    </form>
+    </div>
+   </div> 
+  </nav>
+</header>
+
+<!-- Мобільне меню -->
+<div class="mobile-menu" id="mobileMenu">
+     <button class="btn-star" id="favoriteBtn1" title="Додати у вибране">
+      <i class="bi bi-star"></i> Вибране
+    </button>
+  <ul class="menu">
+    <li class="menu-item"><a href="index.html#hero" class="item-link">Головна</a></li>
+      <li class="menu-item"><a href="index.html#works" class="item-link">Ремонт</a></li>
+      <li class="menu-item"><a href="index.html#info" class="item-link">Будівництво</a></li>
+      <li class="menu-item"><a href="index.html#article" class="item-link orange-link">Статті про ремонт</a></li>
+      <li class="menu-item"><a href="index.html#idea" class="item-link">Ідеї для дизайну</a></li>
+  </ul>
+  <form class="search-form d-flex mt-3" role="search">
+    <input class="form-control me-2" type="search" placeholder="Пошук..." aria-label="Search">
+    <button class=" forms-btn" type="submit">Знайти</button>
+  </form>
+</div>
+<div class="overlay" id="overlay"></div>
+
+
+<main>
+  <section class="hero-one">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Ремонт квартир під ключ</h1>
+        <p class="hero-text">Ремонт квартир під ключ обов'язково супроводжується підписанням договору та укладанням кошторису. Закупівля матеріалів для ремонту квартири дозволяє заощадити, якщо довірити її підряднику, що знижує загальну вартість заходу. </p>
+        <a class="btn-hero" href="">Ще статті про ремонт</a>
+      </div>
+    </div>
+  </section>
+<section class="article-one pt-5 pb-5">
+    <div class="container ">
+      <h2 class="info-title mb-5  text-center">Статті з ремонту та оздоблювальних робіт</h2>
+    <div class="box-article-one d-flex gap-4">
+   <div class="links-container">
+    <h5 class="title-link">Статті за темами</h5>
+    <div class="box-link">
+  <a href="#">Нові статті</a>
+  <a href="#">Найпопулярніше</a>
+  <a href="#">Статті про кухні</a>
+  <a href="#">Статті про ванні кімнати</a>
+  <a href="#">Поради про сад та рослини</a>
+  <a href="#">Поради про планування та перепланування</a>
+  <a href="#">Статті про шпалер</a>
+  <a href="#">Статті про фарби та штукатурку</a>
+  <a href="#">Статті про покриття для підлоги</a>
+  <a href="#">Статті про плитку та мозаїку</a>
+  <a href="#">Статті про вікна та двері</a>
+  <a href="#">Статті про сходи</a>
+  <a href="#">Статті про каміни</a>
+  <a href="#">Підлога, стіни стеля - по поверхнях</a>
+  <a href="#">Практикум ремонту</a>
+  <a href="#">Поради щодо декору</a>
+  <a href="#">Архітектура, поради щодо будівництва</a>
+  <a href="#">Більше категорій</a>
+</div>
+   </div>
+
+  <div class="container-cards ">
+
+
+
+    <div class="cards">
+  <img class="cards-image" src="img1/page-a.png" alt="Приклад фото">
+  <div class="cards-content">
+    <h3 class="card-title">Хочете дізнатися більше про покрівельні роботи?</h3>
+    <p class="cards-text mb-2" id="text1">
+     Коли справа стосується даху вашого будинку, важливо звернути увагу на його стан та своєчасно проводити професійні роботи для забезпечення надійного захисту вашого житла від негоди та інших зовнішніх впливів. Наші досвідчені фахівці пропонують повний спектр послуг: заміна пошкоджених покрівельних матеріалів, ремонт течій, встановлення нових дахів та систем водостоків та дренажу. Ми працюємо тільки з якісними матеріалами від перевірених виробників, щоб забезпечити тривалий термін служби вашої покрівлі. Наша команда гарантує професійний підхід та бездоганне виконання кожної роботи. Не відкладайте турботу про ваш дах на потім, звертайтеся до нас, і ми зробимо все, щоб ваш будинок залишався надійно захищеним та виглядав красиво протягом багатьох років!
+    </p>
+    <div class="span-btn d-flex  justify-content-between">
+
+      <span>25.02.2023</span>
+    <button class="cards-btn" aria-controls="text1" aria-expanded="false">Читати більше</button>
+    </div>
+  </div>
+    </div>
+   <div class="cards">
+  <img class="cards-image" src="img1/page-b.png" alt="Приклад фото">
+  <div class="cards-content">
+    <h3 class="card-title mb-2">Хочете дізнатися більше про сантехнічні роботи?</h3>
+    <p class="cards-text" id="text2">
+     Коли йдеться про важливість комфортного та безпечного життя у вашому будинку, сантехніка відіграє ключову роль. Наша компанія спеціалізується на наданні широкого спектру послуг, пов'язаних із сантехнікою, щоб забезпечити вашому будинку ефективне водопостачання та каналізацію.
+Наші досвідчені сантехніки готові допомогти вам із встановленням та заміною сантехнічних приладів, ремонтом трубопроводів та каналізації, а також обслуговуванням систем опалення. Ми працюємо з найсучаснішими матеріалами та технологіями, щоб гарантувати тривалий термін служби вашої сантехніки.
+    </p>
+    <div class="span-btn d-flex  justify-content-between">
+
+      <span>25.02.2023</span>
+    <button class="cards-btn" aria-controls="text1" aria-expanded="false">Читати більше</button>
+    </div>
+  </div>
+   </div>
+   <div class="cards">
+  <img class="cards-image" src="img1/page-c.png" alt="Приклад фото">
+  <div class="cards-content">
+    <h3 class="card-title mb-2">Хочете дізнатися більше про ремонт?</h3>
+    <p class="cards-text" id="text3">
+     Процес відновлення, виправлення або оновлення чогось, включаючи будівлі, приміщення, обладнання або предмети побутового використання. Ремонт може включати в себе різні види дій
+    </p>
+    <div class="span-btn d-flex  justify-content-between">
+
+      <span>25.02.2023</span>
+    <button class="cards-btn" aria-controls="text1" aria-expanded="false">Читати більше</button>
+    </div>
+  </div>
+   </div>
+   <div class="cards">
+  <img class="cards-image" src="img1/page-d.png" alt="Приклад фото">
+  <div class="cards-content">
+    <a href="index2.html">
+    <h3 class="card-title mb-2">Ремонт стільниць зі штучного каменю</h3>
+    <p class="cards-text" id="text4">
+    Процес відновлення, виправлення або оновлення чогось, включаючи будівлі, приміщення, обладнання або предмети побутового використання. Ремонт може включати в себе різні види дій
+    </p>
+    <div class="span-btn d-flex  justify-content-between">
+
+      <span>25.02.2023</span>
+    <button class="cards-btn" aria-controls="text1" aria-expanded="false">Читати більше</button>
+    </a>
+    </div>
+  </div>
+   </div>
+</div>
+   </div>
+  </div>
+     
+  </div>
+</section>
+<section class="robot ">
+  <div class="container ">
+    <div class="box-robot d-flex">
+    <img class="img-robot" src="img1/img-robot.png" alt="фото робота">
+    <div class="robot-content">
+      <h2 class="info-title text-white">Якщо вам потрібна допомога у ремонті,
+створіть собі онлайн-помічника</h2>
+<p class="robot-text text-white">Наш онлайн-помічник буде зберігати все, що стосується вашого ремонту, а також буде підбирати всю корисну інформацію по темі, що вас цікавить.</p>
+<button class="work-btn" id="openFormBtn">Створити помічника</button>
+<div class="helper-form" id="helperForm">
+  <h3>Форма створення помічника</h3>
+  <input type="text" id="helperName" placeholder="Ім’я вашого помічника">
+  <textarea id="helperTask" placeholder="Що має робити ваш помічник?"></textarea>
+  <button type="button" id="submitForm">Створити</button>
+</div>
+
+</div>
+    </div>
+</div>
+ </section>
+</main>
+<footer class="footer  text-white pt-5 ">
+  <div class="container">
+    <div class="row">
+      <!-- Логотип і соцмережі -->
+      <div class="col-md-3 text-center text-md-start mb-4">
+        <img src="img/logo-footer.png" alt="Logo" class="img-fluid mb-3">
+        <div class="text-center">
+
+          <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Три колонки списків -->
+      <div class="col-md-9">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3">
+            <h5 class="border-bottom pb-2">Про проект</h5>
+            <ul class="list-unstyled">
+              <li class="pb-2"><a href="#" class="text-white footer-link ">Підпункт 1 </a></li>
+              <li  class="pb-2"><a href="#" class="text-white footer-link">Підпункт 2</a></li>
+              <li><a href="#" class="text-white footer-link ">Підпункт 3</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5 class="border-bottom pb-2" >Тех підтримка</h5>
+            <ul class="list-unstyled">
+              <li  class="pb-2"><a href="#" class="text-white footer-link ">Підпункт 1</a></li>
+              <li  class="pb-2"><a href="#" class="text-white footer-link">Підпункт 2</a></li>
+              <li><a href="#" class="text-white footer-link">Підпункт 3</a></li>
+        
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5 class="border-bottom pb-2" >Контакти</h5>
+            <ul class="list-unstyled">
+              <li class="pb-2" >
+                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a></li>     
+              <li><a href="#" class="text-white footer-link">bau-dein-haus@bdh.de</a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+   
+
+    <!-- Нижня частина футера -->
+    <div class="row bg-dark pt-4 pb-4">
+      <div class="text-center ">
+        <p class="mb-0">&copy; Copyright © bau-dein-haus.de - 2023</p>
+      </div>
+    </div>
+
+</footer>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main1.js"></script>
+<script src="main.js"></script>
+  </body>
+  </html>

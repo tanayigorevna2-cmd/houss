@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bau-dein-Haus</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- Твої стилі -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style0.css">
+</head>
+
+
+  <body>
+  <!-- 🔹 Схований SVG-спрайт -->
+  <svg style="display: none;">
+    <symbol id="arrow-icon" viewBox="0 0 30 30">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0.174561 14.998C0.174561 16.7926 1.62885 18.2474 3.42269 18.2474H10.5255V15.6721L14.3262 15.6721V19.4488C14.3262 20.9164 15.5147 22.1062 16.9814 22.1077H17.1662C17.5462 22.1077 17.9075 22.0278 18.2173 21.8906L28.2515 17.425L28.2682 17.4182C29.1865 17.0035 29.8257 16.0794 29.8257 15.0059V14.998L29.8257 14.998V14.99C29.8257 13.9173 29.187 12.9937 28.2528 12.5724L18.2253 8.10945H18.219C17.8965 7.96976 17.5408 7.89233 17.167 7.89233H16.9812C15.5156 7.8939 14.3278 9.08221 14.3262 10.5486V14.3238L10.5255 14.3238V11.7485L3.42269 11.7485C1.6288 11.7485 0.174561 13.2033 0.174561 14.998ZM15.674 15.6721V19.4475C15.6748 20.1695 16.2596 20.7546 16.9813 20.7554H17.1666C17.3529 20.7554 17.5302 20.7167 17.6908 20.6469L17.6823 20.6502L27.7057 16.1885C28.1644 15.9824 28.478 15.5294 28.478 15.0031V14.9977L28.478 14.998C28.4779 14.4725 28.1649 14.0202 27.7152 13.8175L27.707 13.8142L17.6822 9.34582C17.5304 9.27931 17.3534 9.24067 17.1674 9.24067L16.9814 9.24067C16.2596 9.24142 15.6748 9.82654 15.674 10.5485V14.3238L20.1486 14.3238V15.6721L15.674 15.6721ZM1.52238 14.998C1.52238 13.948 2.37323 13.0969 3.42278 13.0969H9.17775L9.17775 16.8991H3.42278C2.37323 16.8991 1.52238 16.048 1.52238 14.998Z"
+        fill="#F89062" />
+    </symbol>
+  </svg>
+
+
+<div class="wrapper">
+<header class=" header">
+    <div class="container">
+  <div class="nav-top">
+    <!-- Логотип -->
+    <a href="#" class="d-flex align-items-center text-decoration-none">
+      <img class="logo" src="icon/logo.png" alt="Логотип" >
+    </a>
+
+    <!-- Кнопки -->
+    <div class="btn-box align-items-center gap-2 mt-2 mt-md-0">
+      <button class="btn btn-orange">Побудувати будинок</button>
+      <button class="btn btn-blue-border">Партнерська програма для майстрів</button>
+    </div>
+
+    <!-- Зірочка Вибране -->
+    <button class="btn-star" id="favoriteBtn" title="Додати у вибране">
+      <i class="bi bi-star"></i> Вибране
+    </button>
+
+    <!-- Бургер -->
+    <i class="bi bi-list burger"></i>
+  </div>
+  </div>
+  
+
+  <!-- Меню і пошук для десктопу -->
+  <nav class="nav-menu mt-3">
+     <div class="container d-flex align-items-center justify-content-between">
+    <ul class="menu">
+     <li class="menu-item"><a href="index.html#hero" class="item-link orange-link">Головна</a></li>
+      <li class="menu-item"><a href="index.html#works" class="item-link">Ремонт</a></li>
+      <li class="menu-item"><a href="index.html#info" class="item-link">Будівництво</a></li>
+      <li class="menu-item"><a href="index.html#article" class="item-link">Статті про ремонт</a></li>
+      <li class="menu-item"><a href="index.html#idea" class="item-link">Ідеї для дизайну</a></li>
+    </ul>
+    <div class="form-box">
+    <form class="search-form" role="search">
+      <input class="form-control " type="search" placeholder="Пошук по сайту" aria-label="Search">
+      <button class=" btn-search" type="submit">Знайти</button>
+    </form>
+    </div>
+   </div> 
+  </nav>
+</header>
+
+<!-- Мобільне меню -->
+<div class="mobile-menu" id="mobileMenu">
+     <button class="btn-star" id="favoriteBtn1" title="Додати у вибране">
+      <i class="bi bi-star"></i> Вибране
+    </button>
+  <ul class="menu">
+     <li class="menu-item"><a href="index.html#hero" class="item-link orange-link">Головна</a></li>
+      <li class="menu-item"><a href="index.html#works" class="item-link">Ремонт</a></li>
+      <li class="menu-item"><a href="index.html#info" class="item-link">Будівництво</a></li>
+      <li class="menu-item"><a href="index.html#article" class="item-link">Статті про ремонт</a></li>
+      <li class="menu-item"><a href="index.html#idea" class="item-link">Ідеї для дизайну</a></li>
+  </ul>
+  <form class="search-form d-flex mt-3" role="search">
+    <input class="form-control me-2" type="search" placeholder="Пошук..." aria-label="Search">
+    <button class=" forms-btn" type="submit">Знайти</button>
+  </form>
+</div>
+<div class="overlay" id="overlay"></div>
+
+
+<main>
+  <section id="hero" class="hero text-center ">
+  <div class="container">
+    <h1 class="hero-title fw-bold text-white">Найкращий спосіб побудувати свій власний будинок</h1>
+    <ul class="menu-card">
+      <li class="card-small card-one">
+        <div class="card-body">
+           <a class="card-btn" href="">Будівництво з нуля</a>
+           
+          </div>
+      </li>
+      <li class="card-small card-two">
+          <div class="card-body">
+              <a class="card-btn" href="">Ремонт та оздоблення</a>
+           
+          </div>
+      </li>
+      <li class="card-small card-three">
+           <div class="card-body">
+              <a class="card-btn" href="">Закупівля матеріалів</a>
+           
+          </div>
+      </li>
+       <li class="card-small card-four">
+            <div class="card-body">
+               <a class="card-btn" href="">Пошук бригад та майстрів</a>
+            </div>
+      </li>
+</ul>
+</div>
+</section>
+<section id="info" class="info pt-5 pb-5">
+  <div class="container  ">
+    <div class="info-content text-center">
+      <h2 class="info-title mb-3">Хочете побудувати будинок, але вам потрібна допомога?</h2>
+      <p class="info-text mb-3">Цей сайт — ваш особистий асистент у будівництві вашого будинку, який допоможе вам з пошуком будь-якої<br> цікавої для вас інформації та виконанням будь-яких замовлень та робіт</p>
+    </div>
+    <div class="inform-box d-flex  align-items-center border p-3 mb-3 ">
+      <img class="inform-img" src="img/inform.png" alt="знак питання">
+     <p class="info-box-text">Ми готові допомогти вам у всіх питаннях, пов'язаних з покупкою землі для нерухомості, вибором матеріалів для будівництва, ремонту та інших аспектів будівництва та ремонту. Наша команда надасть вам всю необхідну інформацію, щоб ви могли ухвалити обґрунтоване рішення. Незалежно від того, чи потрібні вам рекомендації щодо вибору ділянки, інформація про найкращі матеріали або пропозиції про фірми та бригади, ми готові зібрати всю необхідну інформацію, щоб ви могли вибрати найбільш зручний та підходящий варіант.</p>
+    </div>
+    <ul class="info-menu">
+       <li class="info-item ">
+        <div class="box-imge ">
+          <img class="item-imge" src="img/info-a.png" alt="">
+          <p class="imge-text">Ми підбираємо для вас всю інформацію на ваш запит</p>
+        </div>
+        <div class="box-svg ">
+          <svg width="30" height="30">
+  <use href="#arrow-icon"></use>
+</svg>
+</div>
+        <div class="box-list">
+          <p class="list-text ">вартість будь-яких матеріалів у різних магазинах та підбір найкращої ціни</p>
+          <p class="list-text ">
+            пошук фірм та бригад для конкретних робіт
+          </p>
+          <p class="list-text ">допомога у розрахунку закуповуваних матеріалів з урахуванням габаритів будинку та термінів, коли вони повинні вже бути на будівельному об'єкті</p>
+        </div>
+      </li>
+
+       <li class="info-item ">
+        <div class="box-imge  pink-box">
+          <img class="item-imge" src="img/info-b.png" alt="">
+          <p class="imge-text">На всьому етапі робіт вам допомагатиме наш віртуальний помічник.</p>
+        </div>
+        <div class="box-svg ">
+          <svg width="30" height="30">
+  <use href="#arrow-icon"></use>
+</svg>
+</div>
+        <div class="box-list">
+          <p class="list-text  pink-list">Він стежить за термінами всіх робіт і нагадує про майбутні роботи</p>
+          <p class="list-text  pink-list">Може зберігати всю інформацію про роботи - облік витрат, документацію, будь-які нотатки</p>
+          <p class="list-text  pink-list">Подбирает полезную информацию и интересные статьи по текущим работам.</p>
+        </div>
+      </li>
+
+       <li class="info-item ">
+        <div class="box-imge ">
+          <img class="item-imge" src="img/info-c.png" alt="">
+          <p class="imge-text">Ми підбираємо надійні фірми та бригади, які можуть виконати роботи</p>
+        </div>
+        <div class="box-svg ">
+          <svg width="30" height="30">
+  <use href="#arrow-icon"></use>
+</svg>
+</div>
+        <div class="box-list">
+          <p class="list-text ">Узгодження робіт, а також обговорення деталей відбувається у зручному чаті</p>
+          <p class="list-text ">
+            Роботи документально фіксуються з оформленням договору
+          </p>
+          <p class="list-text ">Оплата протягом робіт перебуває на депозиті. Виконавець отримає оплату після приймання робіт</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="works" class="works">
+  <div class="container">
+     <h2 class="info-title mb-4 text-center">Як це працює?</h2>
+    <ul class="works-menu ">
+      <li class="works-item">
+        <div class="text-container">
+          <img class="text-img" src="img/works-a.png" alt="">
+          <p class="works-text">Зареєструйтесь і пройдіть коротке анкетування про поточні роботи, вказавши, на якому етапі будівництва ви зараз перебуваєте</p>
+        </div>
+        <div class="works-icon">
+          <span class="line"></span>
+          <span class="numbur">1</span>
+          <span class="line"></span>
+        </div>
+
+    </li>
+       <li class="works-right">
+        <div class="text-container">
+          <img class="text-img" src="img/works-b.png" alt="">
+          <p class="works-text">Наша система проаналізує етап, і на основі даних сформує кроки даного етапу та їх прогнозовані терміни виконання</p>
+        </div>
+        <div class="works-icon">
+            <span class="line"></span>
+          <span class="numbur">2</span>
+          <span class="line"></span>
+        </div>
+        
+    </li>
+     <li class="works-item">
+        <div class="text-container">
+          <img class="text-img" src="img/works-c.png" alt="">
+          <p class="works-text">Ви можете задати будь-який запит щодо будівництва, ремонту, матеріалів. Ми зберемо всю інформацію. Вам залишиться тільки вибрати найбільш зручний варіант</p>
+        </div>
+        <div class="works-icon">
+            <span class="line"></span>
+          <span class="numbur">3</span>
+          <span class="line"></span>
+        </div>
+        
+    </li>
+    <li class="works-right">
+        <div class="text-container">
+          <img class="text-img" src="img/works-d.png" alt="">
+          <p class="works-text">Ми співпрацюємо з перевіреними кваліфікованими фахівцями та компаніями, допомагаємо вибрати ділянку та проектувальників для ген плану чи будь-якого типу об'єкта, а також підбираємо фірми та бригади на будь-якому етапі будівництва та ремонту.</p>
+        </div>
+        <div class="works-icon">
+            <span class="line"></span>
+          <span class="numbur">4</span>
+          <span class="line"></span>
+        </div>
+        
+    </li>
+    <li class="works-item">
+        <div class="text-container">
+          <img class="text-img" src="img/works-i.png" alt="">
+          <p class="works-text">Вам не доведеться турбуватися за якість і терміни робіт, а також за оплату, ми надаємо послугу депозиту, тобто роботи будуть оплачені тільки після приймання вами.</p>
+        </div>
+        <div class="works-icon">
+            <span class="line"></span>
+          <span class="numbur">5</span>
+          <span class="line"></span>
+        </div>
+        
+    </li>
+     <li class="works-right">
+        <div class="text-container">
+          <img class="text-img" src="img/works-f.png" alt="">
+          <p class="works-text">Залишайтесь завжди на зв'язку з виконавцем — ви можете завантажити документи, схеми виконавцю і ним обговорювати деталі в чаті. Усі роботи можна розбити на етапи. Приймання та оплата кожного етапу здійснюватиметься лише після узгодження вами.</p>
+        </div>
+        <div class="works-icon">
+            <span class="line"></span>
+          <span class="numbur">6</span>
+          <span class="line"></span>
+        </div>
+        
+    </li>
+      <li class="works-item">
+        <div class="text-container">
+          <img class="text-img" src="img/works-g.png" alt="">
+          <p class="works-text">Наша система також підбиратиме всю корисну інформацію, яка буде корисна вам для поточних робіт: починаючи від порад з матеріалів і робіт до ідей з інтер'єру та дизайну</p>
+        </div>
+        <div class="works-icon">
+            <span class="line"></span>
+          <span class="numbur">7</span>
+          <span class="line"></span>
+        </div>
+        
+    </li>
+    </ul>
+    <div class="box-button text-center">
+    <a class=" work-btn" href="">ПОБУДУВАТИ ДІМ</a></div>
+  </div>
+</section>
+
+ <section id="idea" class="idea gallery-section py-5">
+  <div class="container position-relative">
+
+    <h2 class="info-title text-center mb-4">Ідеї для вашого будинку</h2>
+
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center gap-2">
+            <div class="col-md-4 box-idea"><img src="img/idea-b.png" class="img-fluid rounded mb-3">
+            <a class="idea-link" href="https://alex-house.com.ua/2025/02/07/remont-pid-kluch-perevagy/">Ремонт квартир під ключ</a></div>
+            <div class="col-md-4 box-idea"><img src="img/idea-a.png" class="img-fluid rounded mb-3">
+            <a class="idea-link " href="https://lytvyn.pro/blog/dizajn-ta-remont-kuhni/">Ремонт кухні</a></div>
+            <div class="col-md-4  box-idea "><img src="img/idea-c.png" class="img-fluid rounded mb-3">
+           <a class="idea-link" href="https://budexim.com.ua/uk/praktichnij-posibnik-z-uspishnogo-remontu-ofisnix-primishhen/">Ремонт офісів та нежитлових приміщень</a> </div>
+            <div class="box-link  text-center ">
+          <a class="article" href="index1.html">Ще статті про ремонт ...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center gap-2">
+            <div class="col-md-4 box-idea"><img src="img/foto-a.jpg" class="img-fluid rounded ">
+            <a class="idea-link" href="">Поради дизайнера</a> </div>
+            <div class="col-md-4  box-idea"><img src="img/foto-b.jpg" class="img-fluid rounded">
+             <a class="idea-link" href="">Побудувати сучасний будинок</a></div>
+            <div class="col-md-4  box-idea"><img src="img/foto-c.jpg" class="img-fluid rounded">
+            <a class="idea-link" href="">Ремонт вітальні</a> </div>
+            <div class="box-link  text-center ">
+          <a class="article" href="">Ще статті про ремонт ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Кнопки поверх картинок -->
+      <button class="carousel-control-prev bg-white" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="idea-prev" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next bg-white" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="idea-next" aria-hidden="true"></span>
+      </button>
+    </div>
+    </div>
+  </section>
+  <section id="article" class="article pt-4 pb-4">
+    <div class="container">
+  <h2 class="info-title mb-4 text-center">Корисні статті про ремонт</h2>
+
+
+<div class="row g-4 mb-4">
+<!-- Картка 1 -->
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 shadow-sm">
+<img src="img/article-a.png" class="card-img-top" alt="Фото 1">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Хочете дізнатися більше про покрівельні роботи?</h5>
+<p class="card-text">Покрівельні роботи виконуються з метою забезпечення захисту будівлі від атмосферних опадів, запобігання проникненню вологи і витоків, а також для підтримки міцності і довговічності покрівлі.</p>
+<div class="mt-auto d-flex justify-content-between align-items-center">
+ <a href="#" class="link-article">Статті про покрівельні роботи</a>
+</div>
+</div>
+<button class="button-card" onclick="findMaster('покрівельних робіт')">Знайдіть майстри з покрівельних робіт</button>
+</div>
+</div>
+
+
+<!-- Картка 2 -->
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 shadow-sm">
+<img src="img/article-b.png" class="card-img-top" alt="Фото 2">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Хочете дізнатися більше про сантехнічні роботи?</h5>
+<p class="card-text">Метою сантехнічних робіт є забезпечення надійної та безпечної роботи систем водопостачання та опалення, а також ефективного видалення стічних вод та відходів.</p>
+<div class="mt-auto d-flex justify-content-between align-items-center">
+<a href="#" class="link-article">Статті про сантехнічні роботи</a>
+</div>
+</div>
+<button class="button-card" onclick="findMaster('ремонту сантехніки')">Знайдіть майстри з ремонту сантехніки</button>
+</div>
+</div>
+
+
+<!-- Картка 3 -->
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 shadow-sm">
+<img src="img/article-c.png" class="card-img-top" alt="Фото 3">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title ">Хочете дізнатися більше про ремонт?</h5>
+<p class="card-text">Процес відновлення, виправлення або оновлення чогось, включаючи будівлі, приміщення, обладнання або предмети побутового використання. Ремонт може включати в себе різні види дій</p>
+<div class="mt-auto d-flex justify-content-between align-items-center">
+<a href="#" class="link-article">Статті про ремонт</a>
+</div>
+</div>
+<button class="button-card" onclick="findMaster('ремонту')">Знайдіть майстри з ремонту</button>
+</div>
+
+</div>
+
+  </div>
+  
+<div class="box-link-blue  text-center ">
+          <a class=" link-blue" href="index1.html">Детальніше про інші види робіт…</a>
+            </div>
+</div>
+  </section>
+  </main>
+ <footer class="footer  text-white pt-5 ">
+  <div class="container">
+    <div class="row">
+      <!-- Логотип і соцмережі -->
+      <div class="col-md-3 text-center text-md-start mb-4">
+        <img src="img/logo-footer.png" alt="Logo" class="img-fluid mb-3">
+        <div class="text-center">
+
+          <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Три колонки списків -->
+      <div class="col-md-9">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3">
+            <h5 class="border-bottom pb-2">Про проект</h5>
+            <ul class="list-unstyled">
+              <li class="pb-2"><a href="#" class="text-white footer-link ">Підпункт 1 </a></li>
+              <li  class="pb-2"><a href="#" class="text-white footer-link">Підпункт 2</a></li>
+              <li><a href="#" class="text-white footer-link ">Підпункт 3</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5 class="border-bottom pb-2" >Тех підтримка</h5>
+            <ul class="list-unstyled">
+              <li  class="pb-2"><a href="#" class="text-white footer-link ">Підпункт 1</a></li>
+              <li  class="pb-2"><a href="#" class="text-white footer-link">Підпункт 2</a></li>
+              <li><a href="#" class="text-white footer-link">Підпункт 3</a></li>
+        
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5 class="border-bottom pb-2" >Контакти</h5>
+            <ul class="list-unstyled">
+              <li class="pb-2" >
+                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a></li>     
+              <li><a href="#" class="text-white footer-link">bau-dein-haus@bdh.de</a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </footer> 
+
+    <!-- Нижня частина футера -->
+    <div class="row bg-dark pt-4 pb-4">
+      <div class="text-center ">
+        <p class="mb-0">&copy; Copyright © bau-dein-haus.de - 2023</p>
+      </div>
+    </div>
+
+
+  
+
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+
+
+</body>
+</html>
