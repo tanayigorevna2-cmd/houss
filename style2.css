@@ -6,7 +6,7 @@ body{
     display: block;
     width:24px ;
     height:24px ;
-    background-image: url(../hous/icon/header-icon.png);
+    background-image: url(./icon/header-icon.png);
     background-repeat: no-repeat;
    
 }
@@ -51,7 +51,7 @@ background-color:#FEF4EF;
     display: block;
     min-width:24px ;
     height:24px ;
-    background-image: url(../hous/icon/icon-arrow.png);
+    background-image: url(./icon/icon-arrow.png);
     background-repeat:no-repeat ;
     background-position: center;
     
@@ -85,7 +85,7 @@ body{
 }
 /**************************forma********************/
 .forma{
-    background-image:url(../hous/img/form-bg.png) ;
+    background-image:url(./img/form-bg.png) ;
     background-repeat:no-repeat ;
     min-height: auto;
     padding: 32px 0;
@@ -157,5 +157,6 @@ padding: 10px 20px;}
 .forma-text{
     font-size: 8px;
 }
+
 
   }
