@@ -4,7 +4,7 @@
     }
      /***********hero*****************************/
      .hero-one {
-      background-image: url(./img1/hero-bg.png);
+      background-image: url(./img/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -196,7 +196,7 @@ gap: 40px;
   /****************************robot************************/
 .robot {
   padding: 40px 0 40px 0;
-  background-image: url(./img1/robot-bg.png);
+  background-image: url(./img/robot-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,6 +327,7 @@ height: 350px;
 }
  
 }
+
 
 
 
